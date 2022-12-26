@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.caixa-canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+.fixed {
+  /* background: #a4c467; */
+  height: 12px;
+  width: 20px;
+  position: fixed;
+  bottom: 60px;
+  right: 32px;
+}
+
+.fixed-button-modal {
+  /* background: #a4c467;
+  height: 12px;
+  width: 20px;
+  position: fixed;
+  bottom: 60px;
+  right: 32px; */
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#video {
+  display: none;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  backdrop-filter: blur(14px);
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  color: #fff;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+  background-color: transparent;
+  border: transparent;
+}
+
+
+#myBtn:hover {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+
+
+.container {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container p span.typed-text {
+  font-weight: normal;
+  color: #00FF00;
+}
+
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #ccc;
+  }
+}
+
+.text-top {
+  height: 50px;
+  left: 5%;
+  position: fixed;
+  top: 8px;
+  width: 117px;
+}
+
+.container-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  /* background: #20202052; */
+  padding: 5px;
+  width: 95px;
+  height: 126px;
+  margin: 10px;
+  border-radius: 12px;
+  line-height: 165px;
+  color: white;
+  /* font-weight: bold; */
+  /* font-size: 3em; */
+  text-align: center;
+}
+
+.flex {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+span.small {
+  font-size: smaller;
+}
+
+
+.smaller-center {
+  text-align: center;
+  color: #3c3c3c;
+}
